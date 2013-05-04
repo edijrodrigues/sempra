@@ -15,7 +15,8 @@ namespace calculadora
             calc.subtrair(2);
             calc.dividir(2);
 
-            Console.WriteLine(calc.getTotal());
+            //Console.WriteLine(calc.getTotal());
+            
                
             Console.Read();
         }
