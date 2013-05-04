@@ -7,13 +7,20 @@ namespace calculadora
 {
     class Calculadora
     {
+        private float total;
 
         /*
-         *  Metodo construto utilizado para inicializar o objeto.
+         *  Metodo construtor utilizado para inicializar o objeto.
          */
+
         public Calculadora()
+        {
+            total = 0;
+        }
+
+        public Calculadora(int a)
 	    {
-            Console.WriteLine("Objeto inicializado.");            
+          total =  a;
 	    }
 
         public float somar(float a, float b) //   Metodo Somar. 
@@ -21,9 +28,19 @@ namespace calculadora
             return a + b;
         }
 
-        public float subtrair(float a, float b)  
+        public float somar(float a) //   Metodo Somar. 
+        {
+            return total = somar(total, a);
+        }
+
+        public float subtrair(float a, float b) // Metodo subtrair. 
         {
             return a - b;
+        }
+
+        public float subtrair(float a) // Metodo subtrair. 
+        {
+            return total = subtrair(total,a);
         }
 
         public float dividir(float a, float b)
@@ -31,9 +48,23 @@ namespace calculadora
             return a / b;
         }
 
+        public float dividir(float a)
+        {
+            return total = dividir(total, a);
+        }
         public float multiplicar(float a, float b)
         {
             return a * b;
+        }
+
+        public float multiplicar(float a)
+        {
+            return total = multiplicar(total,a);
+        }
+
+        public float getTotal() 
+        {
+            return total;
         }
 
     }

@@ -9,13 +9,14 @@ namespace calculadora
     {
         static void Main(string[] args)
         {
-            Calculadora calc = new Calculadora(); //Instaciou o objeto do tipo Calculadora.
-
-            calc.somar(5, 6);  //Utilizndo o metodo somar que pertence ao Objeto calc.   
-            Console.WriteLine(calc.multiplicar (50, 5));
+            Calculadora calc = new Calculadora(100); //Instaciou o objeto do tipo Calculadora.
             
-            
+            calc.somar(6);
+            calc.subtrair(2);
+            calc.dividir(2);
 
+            Console.WriteLine(calc.getTotal());
+               
             Console.Read();
         }
     }
