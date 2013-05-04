@@ -1,0 +1,8 @@
+﻿<Window x:Class="sentesaldade_do_mouse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Name="botao_solitario">
+        <Button Content="Sozinho" Height="48" HorizontalAlignment="Left" Margin="179,136,0,0" Name="button1" VerticalAlignment="Top" Width="128" Click="button1_Click" MouseEnter="button1_MouseEnter" MouseMove="button1_MouseMove" />
+    </Grid>
+</Window>
