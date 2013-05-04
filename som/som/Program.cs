@@ -12,7 +12,7 @@ namespace som
             Som(3); // Execulta musica
         }
 
-        static public void Som(int repet)
+        static public void Som(int repet) //metodo som
         { 
             
 
@@ -28,5 +28,6 @@ namespace som
             }
             
         }
+
     }
 }
